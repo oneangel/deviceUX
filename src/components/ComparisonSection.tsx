@@ -98,7 +98,7 @@ const comparisons = [
   {
     title: "Diseño de Interfaz Móvil",
     good: {
-      image: "/src/images/goodui.png",
+      image: "/images/goodui.png",
       description: "Esta aplicación móvil prioriza el contenido importante, usa una jerarquía visual clara y proporciona navegación intuitiva.",
       points: [
         "Objetivos táctiles grandes y fáciles para entrada con dedos",
@@ -108,7 +108,7 @@ const comparisons = [
       ]
     },
     bad: {
-      image: "/src/images/badui.png",
+      image: "/images/badui.png",
       description: "Esta interfaz móvil desordenada es difícil de usar, con mala organización y patrones de interacción poco claros.",
       points: [
         "Demasiados elementos compitiendo por atención",
