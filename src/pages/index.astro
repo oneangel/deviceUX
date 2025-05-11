@@ -1,0 +1,19 @@
+---
+import '@/styles/globals.css';
+import MainLayout from '@/layouts/MainLayout.astro';
+import HeroSection from '@/components/HeroSection';
+import FeatureSection from '@/components/FeatureSection';
+import DefinitionsSection from '@/components/DefinitionsSection';
+import InfoSection from '@/components/InfoSection';
+import ParameterSection from '@/components/ParameterSection';
+import ComparisonSection from '@/components/ComparisonSection';
+---
+
+<MainLayout title="Guía de UI/UX para Dispositivos Inteligentes">
+  <HeroSection client:load />
+  <FeatureSection client:load />
+  <InfoSection client:load />
+  <DefinitionsSection client:load />
+  <ParameterSection client:load />
+  <ComparisonSection client:load />
+</MainLayout>

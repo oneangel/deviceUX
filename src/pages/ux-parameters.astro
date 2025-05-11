@@ -1,0 +1,654 @@
+---
+import '@/styles/globals.css';
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Card } from '@/components/ui/card';
+---
+
+<MainLayout title="UX Parameters & Guidelines">
+  <div class="py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto mb-16">
+        <h1 class="text-4xl font-bold mb-6">Parámetros críticos de UX</h1>
+        <p class="text-xl text-muted-foreground">
+          Comprender los parámetros clave que definen experiencias de usuario eficaces en distintos dispositivos inteligentes.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
+        <div>
+          <h2 class="text-2xl font-bold mb-6">¿En qué consiste una buena experiencia del usuario?</h2>
+          <p class="text-muted-foreground mb-6">
+            La experiencia de usuario (UX) abarca todos los aspectos de la interacción del usuario final con una empresa, sus servicios y sus productos. 
+            Va más allá de la interfaz e incluye todo el recorrido, desde el descubrimiento hasta el uso a largo plazo.
+          </p>
+          
+          <div class="bg-card rounded-lg border border-border p-6 mb-8">
+            <h3 class="text-lg font-medium mb-3">La importancia de una experiencia de usuario específica para cada dispositivo</h3>
+            <p class="text-sm text-muted-foreground">
+              Los distintos dispositivos inteligentes se utilizan en contextos diferentes, con fines distintos y con expectativas distintas. 
+              Comprender estos matices es crucial para crear experiencias que resulten naturales y adecuadas para cada tipo de dispositivo.
+            </p>
+          </div>
+          
+          <div class="relative">
+            <img 
+              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              alt="UX Design Process" 
+              class="rounded-xl w-full object-cover h-64 mb-6" 
+            />
+            <div class="absolute bottom-10 right-4 bg-background/90 backdrop-blur-sm rounded-lg p-3 max-w-xs border border-border">
+              <p class="text-xs">
+                Un diseño de experiencia de usuario eficaz requiere un profundo conocimiento de las necesidades, comportamientos y objetivos del usuario en el contexto específico de uso de cada tipo de dispositivo.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-muted/30 rounded-xl p-8 border border-border">
+          <h3 class="text-xl font-bold mb-6">Parámetros esenciales de UX</h3>
+          
+          <div class="space-y-8">
+            <div>
+              <div class="flex items-center mb-2">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                  <span class="text-primary text-sm font-medium">1</span>
+                </div>
+                <h4 class="text-lg font-medium">Usabilidad</h4>
+              </div>
+              <p class="text-sm text-muted-foreground pl-11">
+                Facilidad de uso, aprendizaje y memorización del producto. Incluye la eficacia (velocidad de realización de la tarea), la prevención de errores, 
+ y la recuperación tras los errores.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-center mb-2">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                  <span class="text-primary text-sm font-medium">2</span>
+                </div>
+                <h4 class="text-lg font-medium">Accesibilidad</h4>
+              </div>
+              <p class="text-sm text-muted-foreground pl-11">
+                Garantizar que el producto pueda ser utilizado por personas con una amplia gama de capacidades, incluidas las discapacitadas (visuales, auditivas, motoras, cognitivas).              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-center mb-2">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                  <span class="text-primary text-sm font-medium">3</span>
+                </div>
+                <h4 class="text-lg font-medium">Flujo de usuarios</h4>
+              </div>
+              <p class="text-sm text-muted-foreground pl-11">
+                El camino que siguen los usuarios para alcanzar sus objetivos. Debe ser lógico, eficiente y ajustarse a los modelos mentales de los usuarios sobre cómo deben funcionar las cosas.              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-center mb-2">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                  <span class="text-primary text-sm font-medium">4</span>
+                </div>
+                <h4 class="text-lg font-medium">Rendimiento</h4>
+              </div>
+              <p class="text-sm text-muted-foreground pl-11">
+                Rapidez, capacidad de respuesta y fiabilidad del producto. Los usuarios nunca deben quedarse esperando o preguntándose si sus acciones se han registrado.              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-center mb-2">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                  <span class="text-primary text-sm font-medium">5</span>
+                </div>
+                <h4 class="text-lg font-medium">Comentarios y comunicación</h4>
+              </div>
+              <p class="text-sm text-muted-foreground pl-11">
+                Cómo comunica el sistema su estado y responde a las acciones del usuario. Incluye mensajes de error, indicadores de carga y confirmaciones de éxito.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-center mb-2">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                  <span class="text-primary text-sm font-medium">6</span>
+                </div>
+                <h4 class="text-lg font-medium">Respuesta emocional</h4>
+              </div>
+              <p class="text-sm text-muted-foreground pl-11">
+                Cómo la experiencia hace que los usuarios se sientan. Incluye alegría, confianza, frustración o confianza en el producto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h2 class="text-3xl font-bold mb-8 text-center">Guías de UX específicas para cada dispositivo</h2>
+      
+      <div class="space-y-12 mb-20">
+        <!-- Smartphones UX Guidelines -->
+        <div class="bg-card rounded-xl overflow-hidden border border-border shadow-sm">
+          <div class="md:grid md:grid-cols-3">
+            <div class="md:col-span-1 bg-gradient-to-br from-blue-500 to-purple-600 text-white flex items-center justify-center p-8">
+              <div class="text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+                <h3 class="text-xl font-bold">Smartphones</h3>
+              </div>
+            </div>
+            
+            <div class="p-8 md:col-span-2">
+              <h3 class="text-2xl font-bold mb-6">Directrices UX para teléfonos inteligentes</h3>
+              
+              <div class="space-y-4 mb-6">
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Manejo con una sola mano</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Coloca las acciones de las teclas al alcance del pulgar para poder utilizarlas con una sola mano, especialmente en el caso de acciones frecuentes. 
+                      Ten en cuenta las funciones de alcance para los teléfonos más grandes.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Uso interrumpido</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Diseña para interrupciones frecuentes: guarda estados, utiliza el descubrimiento progresivo y facilita la reanudación de tareas.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Condiciones variables de la red</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Diseña para escenarios de conexión deficiente o sin conexión. Utiliza almacenamiento sin conexión, carga progresiva y feedback claro sobre el estado de la conexión.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Consideraciones del entorno</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Ten en cuenta las condiciones de iluminación variables (brillante a oscuro) y los entornos ruidosos que pueden afectar al feedback de audio.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Concienciación de la batería</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Optimiza para la eficiencia de la batería. Proporciona opciones para reducir el uso de datos y la consumación de batería para las funciones intensivas en potencia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-muted/40 p-4 rounded-lg text-sm">
+                  <strong>Información clave:</strong> La experiencia de usuario móvil está muy influida por el contexto: dónde, cuándo y cómo se utiliza el dispositivo. 
+                   A menudo, en movimiento, en sesiones breves y con la atención dividida.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Smart TVs UX Guidelines -->
+        <div class="bg-card rounded-xl overflow-hidden border border-border shadow-sm">
+          <div class="md:grid md:grid-cols-3">
+            <div class="md:col-span-1 bg-gradient-to-br from-green-500 to-teal-600 text-white flex items-center justify-center p-8">
+              <div class="text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <h3 class="text-xl font-bold">Smart TVs</h3>
+              </div>
+            </div>
+            
+            <div class="p-8 md:col-span-2">
+              <h3 class="text-2xl font-bold mb-6">Directrices UX para Smart TVs</h3>
+              
+              <div class="space-y-4 mb-6">
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Experiencia Reclinada</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Diseño para visualización pasiva y cómoda desde la distancia. Minimiza la entrada requerida y crea experiencias de navegación relajadas.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Navegación Remota</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Optimiza para navegación con pad direccional y botones limitados. Minimiza el número de clics necesarios para alcanzar destinos.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Visualización Social</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Ten en cuenta las experiencias de visualización compartida. Proporciona funciones para múltiples espectadores y considera las implicaciones de privacidad.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Descubrimiento de Contenido</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Enfócate en ayudar a los usuarios a descubrir contenido a través de recomendaciones efectivas, patrones de navegación y búsqueda.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Métodos de Entrada Alternativos</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Considera la entrada por voz, aplicaciones complementarias en dispositivos móviles y reconocimiento de gestos como alternativas a la tediosa entrada remota.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-muted/40 p-4 rounded-lg text-sm">
+                <strong>Idea Clave:</strong> Las experiencias de TV deben acomodar tanto modos de interacción activos como pasivos, a menudo con múltiples espectadores 
+                y niveles de atención mixtos en un entorno de sala de estar.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Smartwatches UX Guidelines -->
+        <div class="bg-card rounded-xl overflow-hidden border border-border shadow-sm">
+          <div class="md:grid md:grid-cols-3">
+            <div class="md:col-span-1 bg-gradient-to-br from-orange-500 to-amber-600 text-white flex items-center justify-center p-8">
+              <div class="text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <h3 class="text-xl font-bold">Relojes Inteligentes</h3>
+              </div>
+            </div>
+            
+            <div class="p-8 md:col-span-2">
+              <h3 class="text-2xl font-bold mb-6">Directrices de UX para Relojes Inteligentes</h3>
+              
+              <div class="space-y-4 mb-6">
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Visualización Rápida</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Diseña para sesiones de interacción de 2 segundos. Enfócate en transmitir inmediatamente la información más importante.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Funcionalidad Reducida</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Ofrece solo las características y tareas más esenciales. Deriva interacciones complejas a dispositivos complementarios cuando sea apropiado.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Entrada Multimodal</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Aprovecha la voz, corona digital/bisel y botones físicos para reducir la dependencia de la interacción táctil en la pequeña pantalla.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Conciencia Contextual</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Usa sensores para proporcionar información contextualmente relevante (tiempo, ubicación, actividad) sin entrada del usuario.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Conservación de Batería</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Diseña pensando en extrema eficiencia energética. Minimiza animaciones, procesos en segundo plano y actualizaciones innecesarias.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-muted/40 p-4 rounded-lg text-sm">
+                <strong>Idea Clave:</strong> La UX de los relojes inteligentes debe equilibrar la extrema brevedad con la utilidad, proporcionando justo la información y 
+                funcionalidad suficientes sin requerir interacción o atención prolongada.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-20">
+        <h2 class="text-3xl font-bold mb-8 text-center">Principios de UX Efectiva en Diferentes Dispositivos</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Card className="p-6">
+            <div class="mb-4 bg-blue-500/10 dark:bg-blue-400/10 w-10 h-10 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 dark:text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Cumplir con las Expectativas del Usuario</h3>
+            <p class="text-sm text-muted-foreground">
+              Diseña experiencias que coincidan con los modelos mentales y expectativas de los usuarios para cada dispositivo. 
+              Aprovecha los patrones y convenciones existentes específicos de cada plataforma, pero adáptalos adecuadamente para tu caso de uso específico.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-muted-foreground">
+              <li class="flex items-start">
+                <span class="text-primary mr-2">•</span>
+                <span>Sigue las directrices de la plataforma (iOS, Android, tvOS)</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary mr-2">•</span>
+                <span>Usa patrones de interacción familiares</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary mr-2">•</span>
+                <span>No reinventes la navegación innecesariamente</span>
+              </li>
+            </ul>
+          </Card>
+          
+          <Card className="p-6">
+            <div class="mb-4 bg-green-500/10 dark:bg-green-400/10 w-10 h-10 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 dark:text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Optimizar para el Contexto</h3>
+            <p class="text-sm text-muted-foreground">
+              Considera cuándo, dónde y cómo los usuarios interactúan con cada tipo de dispositivo. El contexto de uso impacta dramáticamente en el tiempo de atención, 
+              duración de la sesión, factores ambientales y objetivos del usuario.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-muted-foreground">
+              <li class="flex items-start">
+                <span class="text-primary mr-2">•</span>
+                <span>Ten en cuenta los factores ambientales</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary mr-2">•</span>
+                <span>Considera la duración típica de sesión</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary mr-2">•</span>
+                <span>Diseña para diferentes niveles de atención</span>
+              </li>
+            </ul>
+          </Card>
+          
+          <Card className="p-6">
+            <div class="mb-4 bg-purple-500/10 dark:bg-purple-400/10 w-10 h-10 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-600 dark:text-purple-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Crear Ecosistemas Fluidos</h3>
+            <p class="text-sm text-muted-foreground">
+              Diseña para experiencias entre dispositivos que permitan a los usuarios moverse entre ellos manteniendo el contexto. 
+              Considera cómo cada dispositivo encaja en el ecosistema más amplio de productos y servicios.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-muted-foreground">
+              <li class="flex items-start">
+                <span class="text-primary mr-2">•</span>
+                <span>Sincroniza datos de usuario y progreso</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary mr-2">•</span>
+                <span>Permite la continuación de tareas entre dispositivos</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary mr-2">•</span>
+                <span>Mantén una terminología consistente</span>
+              </li>
+            </ul>
+          </Card>
+        </div>
+      </div>
+      
+      <div class="mb-20">
+        <h2 class="text-3xl font-bold mb-8 text-center">Midiendo la Efectividad de la UX</h2>
+        
+        <div class="bg-muted/30 rounded-xl p-8 border border-border max-w-3xl mx-auto">
+          <p class="text-muted-foreground mb-6">
+            Aunque la UX es parcialmente subjetiva, hay métricas tanto cualitativas como cuantitativas que pueden ayudar a evaluar la efectividad de 
+            las experiencias de usuario en diferentes tipos de dispositivos.
+          </p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold mb-4">Métricas Cualitativas</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Entrevistas con Usuarios</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Conversaciones en profundidad con usuarios sobre sus experiencias, puntos problemáticos y satisfacción.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Pruebas de Usabilidad</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Observar a los usuarios mientras completan tareas, notando dificultades, confusión o satisfacción.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Encuestas de Satisfacción</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Cuestionarios estandarizados como System Usability Scale (SUS) o Net Promoter Score (NPS).
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-bold mb-4">Métricas Cuantitativas</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Tasa de Éxito en Tareas</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Porcentaje de usuarios que pueden completar con éxito tareas específicas.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Tiempo en Tarea</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Cuánto tiempo tardan los usuarios en completar acciones o flujos de trabajo específicos.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Métricas de Interacción</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Duración de sesión, frecuencia de uso, tasas de retención y adopción de funciones.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="mt-8 p-4 bg-card rounded-lg border border-border">
+            <h4 class="font-medium mb-2">Métricas Específicas por Dispositivo</h4>
+            <p class="text-sm text-muted-foreground">
+              Diferentes métricas pueden ser más relevantes para diferentes tipos de dispositivos. Para relojes inteligentes, el tiempo de vistazo y la velocidad de recuperación 
+              de información pueden ser lo más importante. Para televisores, el éxito en el descubrimiento de contenido y la duración de las sesiones de visualización pueden ser indicadores clave. 
+              Para smartphones, las tasas de finalización de tareas y la satisfacción del usuario en diversos contextos deben ser priorizadas.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Reflexiones Finales: La UX es un Proceso Continuo</h2>
+        
+        <div class="bg-primary/10 rounded-xl p-8 border border-primary/20">
+          <p class="text-muted-foreground mb-4">
+            La UX efectiva no es un logro puntual sino un proceso continuo de investigación, diseño, prueba y refinamiento. 
+            A medida que evolucionan las capacidades de los dispositivos y cambian las expectativas de los usuarios, las estrategias de UX deben adaptarse en consecuencia.
+          </p>
+          
+          <p class="text-muted-foreground mb-4">
+            Los enfoques más exitosos para el diseño de UX:
+          </p>
+          
+          <ul class="space-y-2 text-muted-foreground mb-6">
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              <span>Se centran en las necesidades y objetivos del usuario, no en las características tecnológicas</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              <span>Tienen en cuenta las características y contextos únicos de cada tipo de dispositivo</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              <span>Equilibran la consistencia entre dispositivos con experiencias optimizadas para cada plataforma</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2">•</span>
+              <span>Utilizan métricas y comentarios de usuarios para mejorar continuamente</span>
+            </li>
+          </ul>
+          
+          <p class="text-muted-foreground">
+            Recuerda que la UX trata fundamentalmente sobre cómo se sienten los usuarios al interactuar con tu producto en todos los puntos de contacto y dispositivos. 
+            Al comprender las características únicas de los diferentes dispositivos inteligentes y diseñar experiencias apropiadas para cada uno, 
+            puedes crear productos que realmente satisfagan las necesidades y expectativas de los usuarios en nuestro mundo cada vez más conectado.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>

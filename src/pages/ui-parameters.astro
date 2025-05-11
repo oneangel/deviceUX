@@ -1,0 +1,582 @@
+---
+import '@/styles/globals.css';
+import MainLayout from '@/layouts/MainLayout.astro';
+---
+
+<MainLayout title="Parámetros y Directrices de UI">
+  <div class="py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto mb-16">
+        <h1 class="text-4xl font-bold mb-6">Parámetros Críticos de UI</h1>
+        <p class="text-xl text-muted-foreground">
+          Comprendiendo los parámetros clave que definen interfaces de usuario efectivas en diferentes dispositivos inteligentes.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
+        <div>
+          <h2 class="text-2xl font-bold mb-6">¿Qué hace una gran UI?</h2>
+          <p class="text-muted-foreground mb-6">
+            El diseño de Interfaz de Usuario (UI) es el proceso de crear interfaces que faciliten la interacción efectiva entre humanos y productos digitales. 
+            Una UI bien diseñada debe ser intuitiva, eficiente y visualmente atractiva, adaptándose a las características únicas del dispositivo.
+          </p>
+          
+          <div class="bg-card rounded-lg border border-border p-6 mb-8">
+            <h3 class="text-lg font-medium mb-3">La Importancia de UI Específica para Dispositivos</h3>
+            <p class="text-sm text-muted-foreground">
+              Diferentes dispositivos inteligentes tienen restricciones y capacidades únicas que impactan directamente las decisiones de diseño de UI. El tamaño de la pantalla, 
+              métodos de entrada, distancia de visualización y contexto de uso influyen en lo que hace una interfaz efectiva para cada tipo de dispositivo.
+            </p>
+          </div>
+          
+          <div class="relative">
+            <img 
+              src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              alt="Proceso de Diseño UI" 
+              class="rounded-xl w-full object-cover h-64 mb-6" 
+            />
+            <div class="absolute bottom-10 right-4 bg-background/90 backdrop-blur-sm rounded-lg p-3 max-w-xs border border-border">
+              <p class="text-xs">
+                El diseño efectivo de UI requiere equilibrar la estética con la funcionalidad, asegurando que los elementos visuales apoyen y mejoren la capacidad del usuario para alcanzar sus objetivos.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-muted/30 rounded-xl p-8 border border-border">
+          <h3 class="text-xl font-bold mb-6">Parámetros Esenciales de UI</h3>
+          
+          <div class="space-y-8">
+            <div>
+              <div class="flex items-center mb-2">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                  <span class="text-primary text-sm font-medium">1</span>
+                </div>
+                <h4 class="text-lg font-medium">Jerarquía Visual</h4>
+              </div>
+              <p class="text-sm text-muted-foreground pl-11">
+                La disposición de elementos para mostrar su orden de importancia, guiando la atención de los usuarios a través de la interfaz. 
+                Se logra mediante tamaño, color, contraste, espaciado y ubicación de elementos.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-center mb-2">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                  <span class="text-primary text-sm font-medium">2</span>
+                </div>
+                <h4 class="text-lg font-medium">Color y Contraste</h4>
+              </div>
+              <p class="text-sm text-muted-foreground pl-11">
+                Uso estratégico del color para transmitir información, evocar emociones y asegurar la legibilidad. 
+                Ratio de contraste suficiente (mínimo 4.5:1 para texto) para accesibilidad.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-center mb-2">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                  <span class="text-primary text-sm font-medium">3</span>
+                </div>
+                <h4 class="text-lg font-medium">Tipografía</h4>
+              </div>
+              <p class="text-sm text-muted-foreground pl-11">
+                Selección y disposición de tipografías, tamaños de fuente, alturas de línea y espaciado entre letras para una legibilidad e jerarquía de información óptimas.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-center mb-2">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                  <span class="text-primary text-sm font-medium">4</span>
+                </div>
+                <h4 class="text-lg font-medium">Consistencia</h4>
+              </div>
+              <p class="text-sm text-muted-foreground pl-11">
+                Uso de patrones, elementos y comportamientos consistentes en toda la interfaz para crear predictibilidad y facilidad de aprendizaje.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-center mb-2">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                  <span class="text-primary text-sm font-medium">5</span>
+                </div>
+                <h4 class="text-lg font-medium">Diseño Responsivo</h4>
+              </div>
+              <p class="text-sm text-muted-foreground pl-11">
+                Asegurar que la interfaz se adapte apropiadamente a diferentes tamaños de pantalla, orientaciones y tipos de dispositivos.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-center mb-2">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                  <span class="text-primary text-sm font-medium">6</span>
+                </div>
+                <h4 class="text-lg font-medium">Espacio en Blanco y Diseño</h4>
+              </div>
+              <p class="text-sm text-muted-foreground pl-11">
+                Uso estratégico del espacio vacío para crear balance, énfasis y legibilidad. Sistemas de cuadrícula para diseños organizados y consistentes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h2 class="text-3xl font-bold mb-8 text-center">Directrices de UI Específicas para Dispositivos</h2>
+      
+      <div class="space-y-12 mb-20">
+        <!-- Directrices UI para Smartphones -->
+        <div class="bg-card rounded-xl overflow-hidden border border-border shadow-sm">
+          <div class="md:grid md:grid-cols-3">
+            <div class="md:col-span-1 bg-gradient-to-br from-blue-500 to-purple-600 text-white flex items-center justify-center p-8">
+              <div class="text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+                <h3 class="text-xl font-bold">Smartphones</h3>
+              </div>
+            </div>
+            
+            <div class="p-8 md:col-span-2">
+              <h3 class="text-2xl font-bold mb-6">Directrices UI para Smartphones</h3>
+              
+              <div class="space-y-4 mb-6">
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Áreas Táctiles</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Usar áreas táctiles de al menos 44×44 píxeles. Considerar el espaciado entre áreas (mínimo 8px) para prevenir toques accidentales.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Zonas del Pulgar</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Posicionar elementos interactivos clave dentro del alcance fácil del pulgar para uso con una mano. Considerar el mapa de "zona del pulgar" al colocar acciones importantes.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Priorización de Contenido</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Priorizar el contenido de manera rigurosa debido al espacio limitado de pantalla. Usar revelación progresiva para mostrar contenido o opciones adicionales según sea necesario.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Patrones de Navegación</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Usar patrones de navegación móvil familiares como barras de pestañas (iOS) o navegación inferior (Android). Asegurar que el botón de retroceso funcione de manera predecible.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Elementos de Formulario</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Optimizar formularios para entrada móvil. Usar tipos de teclado apropiados, minimizar la entrada de texto y proporcionar mensajes de error claros.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-muted/40 p-4 rounded-lg text-sm">
+                <strong>Insight Clave:</strong> La UI móvil debe equilibrar la estética con consideraciones prácticas para uso en movimiento, 
+                incluyendo condiciones variables de red, interrupciones y operación con una mano.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Directrices UI para Smart TVs -->
+        <div class="bg-card rounded-xl overflow-hidden border border-border shadow-sm">
+          <div class="md:grid md:grid-cols-3">
+            <div class="md:col-span-1 bg-gradient-to-br from-green-500 to-teal-600 text-white flex items-center justify-center p-8">
+              <div class="text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <h3 class="text-xl font-bold">Smart TVs</h3>
+              </div>
+            </div>
+            
+            <div class="p-8 md:col-span-2">
+              <h3 class="text-2xl font-bold mb-6">Directrices UI para Smart TVs</h3>
+              
+              <div class="space-y-4 mb-6">
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Visualización a Distancia</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Diseñar para visualización desde 2-3 metros de distancia. Usar texto grande (mínimo 24px), alto contraste y diseños simplificados.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Navegación Amigable con Control Remoto</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Optimizar para navegación con d-pad (pad direccional). Hacer claros los estados de selección y proporcionar indicadores de foco obvios.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Diseños en Cuadrícula</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Usar diseños basados en cuadrícula para navegación de contenido. Asegurar que el elemento seleccionado esté claramente resaltado y visible.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Minimizar la Entrada de Texto</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Evitar la entrada de texto siempre que sea posible. Usar opciones pre-pobladas, entrada por voz o texto predictivo cuando la entrada sea necesaria.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Animaciones y Transiciones</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Usar animaciones suaves y sutiles que mejoren en lugar de distraer. Asegurar que las transiciones entre pantallas sean claras y proporcionen contexto.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-muted/40 p-4 rounded-lg text-sm">
+                <strong>Insight Clave:</strong> Las interfaces de TV deben abrazar la experiencia "lean-back", enfocándose en el descubrimiento y 
+                consumo de contenido con mínimo esfuerzo del usuario y optimizado para experiencias de visualización compartida.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Directrices UI para Smartwatches -->
+        <div class="bg-card rounded-xl overflow-hidden border border-border shadow-sm">
+          <div class="md:grid md:grid-cols-3">
+            <div class="md:col-span-1 bg-gradient-to-br from-orange-500 to-amber-600 text-white flex items-center justify-center p-8">
+              <div class="text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <h3 class="text-xl font-bold">Smartwatches</h3>
+              </div>
+            </div>
+            
+            <div class="p-8 md:col-span-2">
+              <h3 class="text-2xl font-bold mb-6">Directrices UI para Smartwatches</h3>
+              
+              <div class="space-y-4 mb-6">
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Simplificación Extrema</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Reducir la UI a lo absolutamente esencial. Enfocarse en una acción primaria por pantalla, con texto y gráficos mínimos.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Visibilidad Rápida</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Diseñar para tiempos de interacción de 2 segundos. Usar números grandes, iconos y texto mínimo para transmitir información de un vistazo.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Tamaño de Áreas Táctiles</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Usar áreas táctiles extra grandes (al menos 48×48 píxeles). Limitar el número de elementos interactivos por pantalla.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Tipografía</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Usar texto grande y de alto contraste. Mínimo 16px para texto normal, 22px para encabezados. Evitar fuentes delgadas y tipografías decorativas.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Entradas Alternativas</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Aprovechar comandos de voz, corona digital y botones físicos para navegación para reducir la necesidad de interacción táctil.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-muted/40 p-4 rounded-lg text-sm">
+                <strong>Insight Clave:</strong> La UI de smartwatch debe diseñarse para tiempos de interacción mínimos y máxima densidad de información, 
+                enfocándose en entregar información crítica con la menor entrada de usuario posible.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-20">
+        <h2 class="text-3xl font-bold mb-8 text-center">Consistencia de UI entre Dispositivos</h2>
+        
+        <div class="bg-muted/30 rounded-xl p-8 border border-border max-w-3xl mx-auto">
+          <p class="text-muted-foreground mb-6">
+            Mientras cada tipo de dispositivo requiere adaptaciones específicas de UI, mantener una identidad de marca consistente y patrones de interacción 
+            entre dispositivos es crucial para crear una experiencia de ecosistema integrada.
+          </p>
+          
+          <h3 class="text-xl font-bold mb-4">Equilibrio entre Consistencia y Optimización</h3>
+          
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </span>
+              <div>
+                <span class="font-medium">Elementos Consistentes</span>
+                <ul class="space-y-1 mt-2 text-sm text-muted-foreground">
+                  <li>• Identidad de Marca Visual (colores, tipografía, iconografía)</li>
+                  <li>• Funcionalidad y características principales</li>
+                  <li>• Terminología y convenciones de nomenclatura</li>
+                  <li>• Arquitectura de Información General</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </span>
+              <div>
+                <span class="font-medium">Elementos Optimizados para Dispositivo</span>
+                <ul class="space-y-1 mt-2 text-sm text-muted-foreground">
+                  <li>• Diseño y densidad de información</li>
+                  <li>• Patrones de navegación y métodos de entrada</li>
+                  <li>• Priorización de contenido</li>
+                  <li>• Tamaños y espaciado de elementos interactivos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-8 p-4 bg-card rounded-lg border border-border">
+            <h4 class="font-medium mb-2">Enfoque en el Diseño del Sistema</h4>
+            <p class="text-sm text-muted-foreground">
+              Crear un sistema de diseño integral con componentes adaptables que mantengan la consistencia visual mientras permiten 
+              optimizaciones específicas para cada dispositivo. Usar principios de diseño responsivo que consideren no solo el tamaño de la pantalla sino también 
+              métodos de entrada, distancia de visualización y contexto de uso.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Medir la Efectividad de UI</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-card rounded-xl p-6 border border-border">
+            <h3 class="text-xl font-bold mb-4">Métricas Cualitativas</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Satisfacción del Usuario</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Encuestas, entrevistas y sesiones de retroalimentación para medir cómo se sienten los usuarios sobre la interfaz.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Comprensión</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    ¿Los usuarios entienden qué elementos hacen y cómo lograr tareas sin instrucciones?
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Respuesta Emocional</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    ¿Cómo la interfaz hace que los usuarios se sientan? ¿Se alinea con los valores de la marca?
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="bg-card rounded-xl p-6 border border-border">
+            <h3 class="text-xl font-bold mb-4">Métricas Cuantitativas</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Tasa de Completitud de Tarea</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Porcentaje de usuarios que completan tareas específicas de manera exitosa.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Tiempo en Tarea</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    ¿Cuánto tiempo les toma a los usuarios completar acciones o flujos de trabajo específicos?
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Tasa de Error</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Frecuencia de errores o acciones no intencionadas durante la interacción.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="bg-primary/10 rounded-xl p-8 border border-primary/20">
+          <h3 class="text-xl font-bold mb-4 text-center">Última Palabra: UI es un Medio para un Fin</h3>
+          <p class="text-muted-foreground">
+            Aunque la estética es importante, recuerda que UI es en última instancia una herramienta para ayudar a los usuarios a lograr sus objetivos. La interfaz más hermosa 
+            fallará si no sirve efectivamente para satisfacer las necesidades del usuario o se adapta a las características del dispositivo en el que se diseñó.
+          </p>
+          <p class="text-muted-foreground mt-4">
+            El diseño efectivo de UI requiere un equilibrio entre la estética, la usabilidad y la factibilidad técnica, siempre con un entendimiento de las restricciones y oportunidades únicas presentadas por diferentes características de dispositivos inteligentes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>

@@ -1,0 +1,496 @@
+---
+import '@/styles/globals.css';
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+---
+
+<MainLayout title="Casos de Estudio de UI/UX">
+  <div class="py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto mb-16">
+        <h1 class="text-4xl font-bold mb-6">Casos de Estudio de UI/UX</h1>
+        <p class="text-xl text-muted-foreground">
+          Explorando ejemplos reales de diseño UI/UX efectivo e inefectivo en diferentes dispositivos inteligentes.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+        <!-- Case Study 1 -->
+        <Card className="overflow-hidden">
+          <div class="relative h-64">
+            <img 
+              src="https://fueradefoco.com.mx/wp-content/uploads/2023/12/FUERA-DE-foco-8-1-1-1.webp" 
+              alt="Interfaz de servicio de streaming" 
+              class="w-full h-full object-cover" 
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-4 left-4">
+              <span class="px-2 py-1 bg-primary text-primary-foreground text-xs rounded-full">Smart TV</span>
+            </div>
+          </div>
+          
+          <CardHeader>
+            <CardTitle>Evolución de la UI de Servicio de Streaming</CardTitle>
+            <CardDescription>Cómo una plataforma popular de streaming optimizó su interfaz de TV para visualización relajada</CardDescription>
+          </CardHeader>
+          
+          <CardContent>
+            <p class="text-sm text-muted-foreground mb-4">
+              Este caso de estudio examina cómo un importante servicio de streaming transformó su interfaz de Smart TV desde un diseño 
+              complejo con navegación pesada a una experiencia simplificada, centrada en el contenido y optimizada para navegación con control remoto.
+            </p>
+            
+            <div class="space-y-2 mb-4">
+              <div class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="text-xs">Reducción de la complejidad de navegación en un 60% mientras se mejoró el descubrimiento de contenido</span>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="text-xs">Optimizado para navegación con d-pad con estados de enfoque claros</span>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="text-xs">Aumento de la duración media de sesión de visualización en un 24%</span>
+              </div>
+            </div>
+          </CardContent>
+          
+          <CardFooter>
+            <Button size="sm" variant="outline" className="w-full">Leer Caso de Estudio Completo</Button>
+          </CardFooter>
+        </Card>
+        
+        <!-- Case Study 2 -->
+        <Card className="overflow-hidden">
+          <div class="relative h-64">
+            <img 
+              src="https://images.pexels.com/photos/4350099/pexels-photo-4350099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              alt="Interfaz de aplicación bancaria" 
+              class="w-full h-full object-cover" 
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-4 left-4">
+              <span class="px-2 py-1 bg-primary text-primary-foreground text-xs rounded-full">Smartphone</span>
+            </div>
+          </div>
+          
+          <CardHeader>
+            <CardTitle>Rediseño de App Bancaria</CardTitle>
+            <CardDescription>Simplificando tareas financieras complejas para usuarios móviles en movimiento</CardDescription>
+          </CardHeader>
+          
+          <CardContent>
+            <p class="text-sm text-muted-foreground mb-4">
+              Este caso de estudio explora cómo se rediseñó una aplicación bancaria para hacer tareas financieras complejas accesibles 
+              y manejables en dispositivos móviles, considerando el uso con una sola mano y sesiones interrumpidas.
+            </p>
+            
+            <div class="space-y-2 mb-4">
+              <div class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="text-xs">El flujo de transferencia rediseñado redujo el tiempo de finalización de tareas en un 40%</span>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="text-xs">Optimizado para zonas de pulgar, colocando acciones principales en áreas de fácil alcance</span>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="text-xs">La autenticación biométrica redujo la fricción del inicio de sesión manteniendo la seguridad</span>
+              </div>
+            </div>
+          </CardContent>
+          
+          <CardFooter>
+            <Button size="sm" variant="outline" className="w-full">Leer Caso de Estudio Completo</Button>
+          </CardFooter>
+        </Card>
+        
+        <!-- Case Study 3 -->
+        <Card className="overflow-hidden">
+          <div class="relative h-64">
+            <img 
+              src="https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              alt="Interfaz de seguimiento de fitness" 
+              class="w-full h-full object-cover" 
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-4 left-4">
+              <span class="px-2 py-1 bg-primary text-primary-foreground text-xs rounded-full">Smartwatch</span>
+            </div>
+          </div>
+          
+          <CardHeader>
+            <CardTitle>Experiencia de Rastreador de Fitness</CardTitle>
+            <CardDescription>Creando información de salud visible de un vistazo para pequeñas pantallas wearables</CardDescription>
+          </CardHeader>
+          
+          <CardContent>
+            <p class="text-sm text-muted-foreground mb-4">
+              Este caso de estudio examina cómo una aplicación de seguimiento de fitness rediseñó su interfaz para smartwatch para proporcionar 
+              información significativa sobre salud en un formato fácil de entender de un vistazo en una pantalla pequeña.
+            </p>
+            
+            <div class="space-y-2 mb-4">
+              <div class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="text-xs">Reducción del tiempo medio de vistazo de 4,2 segundos a 1,8 segundos</span>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="text-xs">Aprovechó color, tamaño y posición para comunicar jerarquía de información</span>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="text-xs">Mejoró la duración de la batería en un 30% mediante optimizaciones de UI</span>
+              </div>
+            </div>
+          </CardContent>
+          
+          <CardFooter>
+            <Button size="sm" variant="outline" className="w-full">Leer Caso de Estudio Completo</Button>
+          </CardFooter>
+        </Card>
+        
+        <!-- Case Study 4 -->
+        <Card className="overflow-hidden">
+          <div class="relative h-64">
+            <img 
+              src="https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              alt="Sistema de diseño para múltiples dispositivos" 
+              class="w-full h-full object-cover" 
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-4 left-4">
+              <span class="px-2 py-1 bg-primary text-primary-foreground text-xs rounded-full">Multi-Dispositivo</span>
+            </div>
+          </div>
+          
+          <CardHeader>
+            <CardTitle>Ecosistema Multi-Dispositivo</CardTitle>
+            <CardDescription>Creando una experiencia coherente entre smartphones, tablets y escritorio</CardDescription>
+          </CardHeader>
+          
+          <CardContent>
+            <p class="text-sm text-muted-foreground mb-4">
+              Este caso de estudio explora cómo una aplicación de productividad creó una experiencia unificada en múltiples tipos de dispositivos 
+              mientras optimizaba para las características únicas y contextos de uso de cada plataforma.
+            </p>
+            
+            <div class="space-y-2 mb-4">
+              <div class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="text-xs">Desarrolló un sistema de diseño responsivo con optimizaciones específicas para cada dispositivo</span>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="text-xs">Implementó continuidad de tareas permitiendo a los usuarios cambiar de dispositivo sin problemas</span>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="text-xs">55% de aumento en el uso entre dispositivos después del rediseño</span>
+              </div>
+            </div>
+          </CardContent>
+          
+          <CardFooter>
+            <Button size="sm" variant="outline" className="w-full">Leer Caso de Estudio Completo</Button>
+          </CardFooter>
+        </Card>
+      </div>
+      
+      <div class="mb-20">
+        <h2 class="text-3xl font-bold mb-8 text-center">Fallos Comunes de UI/UX y Lecciones</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-card rounded-xl overflow-hidden border border-border shadow-sm">
+            <div class="bg-destructive/10 px-6 py-4 border-b border-border">
+              <h3 class="text-xl font-bold text-destructive">Lo Que Salió Mal</h3>
+            </div>
+            <div class="p-6 space-y-6">
+              <div class="flex items-start">
+                <span class="bg-destructive/10 text-destructive rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Ignorando el Contexto del Dispositivo</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Una app de productividad que simplemente redujo su interfaz de escritorio para smartwatch, resultando en elementos de UI diminutos e inutilizables.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <span class="bg-destructive/10 text-destructive rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Priorizar la Estética Sobre la Usabilidad</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Una aplicación de navegación con texto hermoso pero de bajo contraste que se volvía ilegible bajo luz solar intensa cuando los usuarios más la necesitaban.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <span class="bg-destructive/10 text-destructive rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Ignorar las Limitaciones de Rendimiento</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Una aplicación de Smart TV con animaciones y efectos pesados que causaba retrasos y frustración durante la navegación básica.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <span class="bg-destructive/10 text-destructive rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Sobrecarga de Funciones</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Una aplicación de smartwatch que intentó incluir todas las funciones de su contraparte para smartphone, resultando en una interfaz confusa y sobrecargada.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-card rounded-xl overflow-hidden border border-border shadow-sm">
+            <div class="bg-green-500/10 px-6 py-4 border-b border-border">
+              <h3 class="text-xl font-bold text-green-600 dark:text-green-400">Lecciones Clave</h3>
+            </div>
+            <div class="p-6 space-y-6">
+              <div class="flex items-start">
+                <span class="bg-green-500/10 text-green-600 dark:text-green-400 rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Diseñar para el Propósito del Dispositivo</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Entender por qué los usuarios eligen un dispositivo particular y optimizar para esos casos de uso específicos en lugar de intentar replicar experiencias entre dispositivos.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <span class="bg-green-500/10 text-green-600 dark:text-green-400 rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Probar en Contextos Reales</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Probar diseños en los entornos reales donde serán utilizados—luz solar brillante para dispositivos móviles, salas de estar para TVs, mientras se camina o se hace ejercicio para dispositivos wearables.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <span class="bg-green-500/10 text-green-600 dark:text-green-400 rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Priorizar Despiadadamente</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Identificar la funcionalidad principal para cada tipo de dispositivo y enfocarse en hacer esas experiencias excepcionales, en lugar de intentar incluir todo.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <span class="bg-green-500/10 text-green-600 dark:text-green-400 rounded-full p-1 mr-3 mt-0.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div>
+                  <span class="font-medium">Considerar Recorridos Entre Dispositivos</span>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Diseñar para cómo los usuarios podrían cambiar entre dispositivos durante una sola tarea o día, asegurando que se mantengan el contexto y el progreso.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Tendencias Futuras en UI/UX de Dispositivos Inteligentes</h2>
+        
+        <div class="bg-muted/30 rounded-xl p-8 border border-border mb-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold mb-4">Tecnologías Emergentes</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Interfaces de Voz y Conversacionales</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      La creciente importancia de las interfaces de voz en todos los tipos de dispositivos, especialmente para contextos manos libres.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Realidad Aumentada</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Interfaces espaciales que combinan elementos digitales con el mundo físico, creando nuevos modelos de interacción.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Computación Ambiental</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Interfaces que se desvanecen en el fondo, apareciendo solo cuando es necesario a través de la conciencia del contexto.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-bold mb-4">Enfoques de Diseño</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Personalización Impulsada por IA</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Interfaces que se adaptan a usuarios individuales basándose en su comportamiento, preferencias y contexto.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Ecosistemas Entre Dispositivos</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Diseñar para transiciones fluidas entre dispositivos, permitiendo a los usuarios continuar tareas a través de diferentes pantallas.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span class="font-medium">Diseño Inclusivo</span>
+                    <p class="text-sm text-muted-foreground mt-1">
+                      Mayor énfasis en diseñar para accesibilidad y diversas necesidades de usuarios en todos los tipos de dispositivos.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-primary/10 rounded-xl p-8 border border-primary/20">
+          <h3 class="text-xl font-bold mb-4 text-center">Reflexiones Finales</h3>
+          <p class="text-muted-foreground mb-4">
+            A medida que el ecosistema de dispositivos inteligentes continúa expandiéndose y evolucionando, entender las características únicas de cada tipo de dispositivo 
+            se vuelve cada vez más importante para crear diseños UI/UX efectivos.
+          </p>
+          <p class="text-muted-foreground">
+            Los enfoques más exitosos equilibrarán las optimizaciones específicas de cada dispositivo con la coherencia del ecosistema, creando experiencias que 
+            se sientan naturales en cada dispositivo mientras permiten a los usuarios moverse sin problemas entre ellos. Al estudiar tanto éxitos como fracasos, 
+            los diseñadores pueden crear interfaces de dispositivos inteligentes que realmente mejoren en lugar de complicar la vida de los usuarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>

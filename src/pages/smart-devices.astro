@@ -1,0 +1,259 @@
+---
+import '@/styles/globals.css';
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Button } from '@/components/ui/button';
+---
+
+<MainLayout title="Características de Dispositivos Inteligentes">
+  <div class="py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto mb-16">
+        <h1 class="text-4xl font-bold mb-6">Características de Dispositivos Inteligentes</h1>
+        <p class="text-xl text-muted-foreground">
+          Comprender las características únicas de los diferentes dispositivos inteligentes es crucial para crear interfaces y experiencias de usuario efectivas.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
+        <div>
+          <h2 class="text-2xl font-bold mb-6">Por qué importan las características del dispositivo</h2>
+          <p class="mb-4 text-muted-foreground">
+            Cada categoría de dispositivo inteligente tiene su propio conjunto de características físicas y técnicas que impactan directamente en cómo los usuarios interactúan con ellos. 
+            Estas características crean tanto restricciones como oportunidades que deben informar las decisiones de diseño.
+          </p>
+          <p class="mb-4 text-muted-foreground">
+            Comprender estas características permite a los diseñadores crear interfaces que:
+          </p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start">
+              <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </span>
+              <span>Se alinean con los modelos mentales y expectativas de los usuarios</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </span>
+              <span>Funcionan dentro de las limitaciones técnicas</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </span>
+              <span>Se optimizan para el contexto en el que se utiliza el dispositivo</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-primary/20 text-primary rounded-full p-1 mr-3 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </span>
+              <span>Aprovechan las capacidades y características únicas</span>
+            </li>
+          </ul>
+          
+        </div>
+        
+        <div class="bg-muted/30 rounded-xl p-8 border border-border">
+          <h3 class="text-xl font-bold mb-4">Características Clave de Dispositivos</h3>
+          <ul class="space-y-6">
+            <li>
+              <h4 class="text-lg font-medium mb-2">Tamaño y Resolución de Pantalla</h4>
+              <p class="text-sm text-muted-foreground">
+                Desde pequeñas pantallas de smartwatch hasta grandes televisores, el tamaño de la pantalla determina la densidad de contenido, 
+                el tamaño de los objetivos táctiles y la arquitectura de la información. La resolución afecta el detalle que se puede mostrar.
+              </p>
+            </li>
+            <li>
+              <h4 class="text-lg font-medium mb-2">Métodos de Entrada</h4>
+              <p class="text-sm text-muted-foreground">
+                Táctil, voz, control remoto, teclado, ratón, gestos — cada método de entrada requiere 
+                diferentes patrones de interacción y affordances.
+              </p>
+            </li>
+            <li>
+              <h4 class="text-lg font-medium mb-2">Contexto de Uso</h4>
+              <p class="text-sm text-muted-foreground">
+                ¿Están los usuarios en movimiento, sentados en un escritorio, relajándose en un sofá o haciendo ejercicio? El contexto influye en la capacidad de atención, 
+                la duración de la sesión y factores ambientales como la iluminación.
+              </p>
+            </li>
+            <li>
+              <h4 class="text-lg font-medium mb-2">Capacidades Técnicas</h4>
+              <p class="text-sm text-muted-foreground">
+                La potencia de procesamiento, la memoria, las opciones de conectividad y la duración de la batería restringen lo que es posible en la interfaz.
+              </p>
+            </li>
+            <li>
+              <h4 class="text-lg font-medium mb-2">Sensores y Características Especiales</h4>
+              <p class="text-sm text-muted-foreground">
+                GPS, acelerómetros, monitores de frecuencia cardíaca, cámaras y otros sensores permiten interacciones y capacidades únicas.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <h2 class="text-3xl font-bold mb-8 text-center">Categorías Comunes de Dispositivos Inteligentes</h2>
+      
+      <div class="space-y-12 mb-20">
+        <!-- Smartphones -->
+        <div class="bg-card rounded-xl overflow-hidden border border-border shadow-sm">
+          <div class="md:grid md:grid-cols-3">
+            <div class="md:col-span-1">
+              <img 
+                src="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                alt="Smartphone" 
+                class="w-full h-full object-cover" 
+              />
+            </div>
+            <div class="p-8 md:col-span-2">
+              <h3 class="text-2xl font-bold mb-4">Smartphones</h3>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <h4 class="text-lg font-medium mb-2">Características Clave</h4>
+                  <ul class="space-y-2 text-sm text-muted-foreground">
+                    <li>• Tamaño de pantalla: 4-7 pulgadas</li>
+                    <li>• Entrada principal: Táctil (dedos)</li>
+                    <li>• Contexto: Uso móvil, en movimiento</li>
+                    <li>• Posición de sujeción: Una o dos manos</li>
+                    <li>• Duración de sesión: Variable (segundos a horas)</li>
+                    <li>• Características únicas: Cámaras, GPS, acelerómetro, conectividad celular</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-medium mb-2">Implicaciones de Diseño</h4>
+                  <ul class="space-y-2 text-sm text-muted-foreground">
+                    <li>• Diseñar para orientaciones vertical y horizontal</li>
+                    <li>• Los objetivos táctiles deben ser de al menos 44×44 píxeles</li>
+                    <li>• Considerar zonas de alcance del pulgar para uso con una mano</li>
+                    <li>• Tener en cuenta la conectividad variable</li>
+                    <li>• Optimizar para sesiones interrumpidas</li>
+                    <li>• Usar patrones móviles estándar (p. ej., barras de pestañas, botones de retroceso)</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="bg-muted/30 p-4 rounded-lg text-sm">
+                <strong>Consideración UX:</strong> Diseñar para uso interrumpido — los usuarios pueden cambiar entre tareas frecuentemente o ser interrumpidos por notificaciones, llamadas o factores ambientales.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Smartwatches -->
+        <div class="bg-card rounded-xl overflow-hidden border border-border shadow-sm">
+          <div class="md:grid md:grid-cols-3">
+            <div class="md:col-span-1">
+              <img 
+                src="https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                alt="Smartwatch" 
+                class="w-full h-full object-cover" 
+              />
+            </div>
+            <div class="p-8 md:col-span-2">
+              <h3 class="text-2xl font-bold mb-4">Relojes Inteligentes</h3>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <h4 class="text-lg font-medium mb-2">Características Clave</h4>
+                  <ul class="space-y-2 text-sm text-muted-foreground">
+                    <li>• Tamaño de pantalla: 1.2-2 pulgadas</li>
+                    <li>• Entrada principal: Táctil (dedos), botones, corona</li>
+                    <li>• Contexto: Portable, de vistazo rápido</li>
+                    <li>• Posición de sujeción: En la muñeca</li>
+                    <li>• Duración de sesión: Muy corta (segundos)</li>
+                    <li>• Características únicas: Monitoreo de frecuencia cardíaca, seguimiento de fitness</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-medium mb-2">Implicaciones de Diseño</h4>
+                  <ul class="space-y-2 text-sm text-muted-foreground">
+                    <li>• Priorización extrema de contenido</li>
+                    <li>• Minimizar entrada de texto</li>
+                    <li>• Usar objetivos táctiles grandes</li>
+                    <li>• Enfocarse en información de vistazo rápido</li>
+                    <li>• Limitar la complejidad de tareas</li>
+                    <li>• Considerar el consumo de energía en las decisiones de diseño</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="bg-muted/30 p-4 rounded-lg text-sm">
+                <strong>Consideración UX:</strong> Diseñar para "visibilidad de un vistazo" — las interacciones deben ser extremadamente breves, proporcionando información clave con interacción mínima requerida.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Smart TVs -->
+        <div class="bg-card rounded-xl overflow-hidden border border-border shadow-sm">
+          <div class="md:grid md:grid-cols-3">
+            <div class="md:col-span-1">
+              <img 
+                src="https://images.pexels.com/photos/4009402/pexels-photo-4009402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                alt="Smart TV" 
+                class="w-full h-full object-cover" 
+              />
+            </div>
+            <div class="p-8 md:col-span-2">
+              <h3 class="text-2xl font-bold mb-4">Televisores Inteligentes</h3>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <h4 class="text-lg font-medium mb-2">Características Clave</h4>
+                  <ul class="space-y-2 text-sm text-muted-foreground">
+                    <li>• Tamaño de pantalla: 32-85+ pulgadas</li>
+                    <li>• Entrada principal: Control remoto, voz</li>
+                    <li>• Contexto: Sala de estar, experiencia relajada</li>
+                    <li>• Distancia de visión: 6-10 pies</li>
+                    <li>• Duración de sesión: Media a larga (minutos a horas)</li>
+                    <li>• Características únicas: Experiencia de visualización compartida</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="text-lg font-medium mb-2">Implicaciones de Diseño</h4>
+                  <ul class="space-y-2 text-sm text-muted-foreground">
+                    <li>• Texto grande y elementos de UI para visualización a distancia</li>
+                    <li>• Navegación simple optimizada para controles direccionales</li>
+                    <li>• Minimizar requisitos de entrada de texto</li>
+                    <li>• Enfocarse en el descubrimiento de contenido</li>
+                    <li>• Diseñar para experiencia de visualización compartida</li>
+                    <li>• Considerar principios de "UI a 10 pies"</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="bg-muted/30 p-4 rounded-lg text-sm">
+                <strong>Consideración UX:</strong> Diseñar para experiencia "reclinada" — los usuarios esperan una interacción pasiva con mínimo esfuerzo, enfocándose en el consumo de contenido.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-primary/10 rounded-xl p-8 border border-primary/20 max-w-3xl mx-auto">
+        <h3 class="text-xl font-bold mb-4 text-center">La Importancia de los Ecosistemas Multiplataforma</h3>
+        <p class="text-muted-foreground mb-4">
+          Muchos usuarios interactúan con múltiples tipos de dispositivos a lo largo de su día. Entender cómo estos dispositivos 
+          funcionan juntos en un ecosistema es crucial para diseñar experiencias coherentes.
+        </p>
+        <p class="text-muted-foreground">
+          Una experiencia multiplataforma bien diseñada considera las fortalezas y debilidades de cada tipo de dispositivo, 
+          permitiendo a los usuarios transitar sin problemas entre dispositivos mientras mantienen el contexto y el progreso.
+        </p>
+      </div>
+    </div>
+  </div>
+</MainLayout>
